@@ -8,4 +8,4 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes/)
 file(GLOB_RECURSE HEADERS "*.h")
 file(GLOB SOURCE "*.cpp")
 
-add_executable(${PROJECT_NAME} ${SOURCE} ${HEADERS})
+add_library(${PROJECT_NAME} SHARED ${SOURCE} ${HEADERS})
